@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#F5F3FF">
+
+        <TextView
+            android:id="@+id/txtJudulAplikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyNotes"
+            android:textColor="#5B3E96"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSubjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan semua ide dan ceritamu."
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:id="@+id/txtBuatCatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Catatan Baru"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtJudul"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Judul catatan"
+            android:padding="12dp"
+            android:backgroundTint="#8B70C9" />
+
+        <EditText
+            android:id="@+id/edtIsi"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Tuliskan catatanmu di sini..."
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#8B70C9" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Simpan Catatan"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#7655B5" />
+
+        <TextView
+            android:id="@+id/txtCatatanSaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catatan Saya"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp" />
+
+        <ListView
+            android:id="@+id/listCatatan"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:divider="#DDDDDD"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btnTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti ke Tema Gelap"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
